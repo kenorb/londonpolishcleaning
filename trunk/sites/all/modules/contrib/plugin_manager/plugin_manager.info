@@ -1,0 +1,18 @@
+name = Plugin Manager
+description = Enables the automated installation of modules and themes from drupal.org
+core = 7.x
+php = 5
+version = VERSION
+package = Administration
+dependencies[] = update
+files[] = plugin_manager.module
+files[] = plugin_manager.install
+files[] = plugin_manager.admin.inc
+files[] = ftp.backend.inc
+files[] = ssh.backend.inc
+; Information added by drupal.org packaging script on 2011-05-09
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "plugin_manager"
+datestamp = "1304900806"
+

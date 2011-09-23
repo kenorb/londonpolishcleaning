@@ -1,0 +1,90 @@
+--- plugin_manager.module	2011-06-01 11:48:47.646376001 +0200
++++ plugin_manager.module	2011-06-01 11:50:02.682376001 +0200
+@@ -20,6 +20,7 @@ function plugin_manager_menu() {
+     'access arguments' => array('access plugin manager'),
+     'position' => 'right',
+     'weight' => -7,
++    'file' => 'plugin_manager.admin.inc',
+   );
+   $items['admin/plugin_manager/search'] = array(
+     'title' => 'Search',
+@@ -27,6 +28,7 @@ function plugin_manager_menu() {
+     'page callback' => 'plugin_manager_search',
+     'access arguments' => array('install plugins'),
+     'block callback' => 'system_admin_theme_settings',
++  	'file' => 'plugin_manager.admin.inc',
+   );
+   $items['admin/plugin_manager/search/ajax'] = array(
+     'title' => 'Search',
+@@ -34,6 +36,7 @@ function plugin_manager_menu() {
+     'page callback' => 'plugin_manager_search_ajax_callback',
+     'access arguments' => array('install plugins'),
+     'type' => MENU_CALLBACK,
++    'file' => 'plugin_manager.admin.inc',
+   );
+   $items['admin/plugin_manager/install'] = array(
+     'title' => 'Install',
+@@ -42,6 +45,7 @@ function plugin_manager_menu() {
+     'page arguments' => array('plugin_manager_install_form'),
+     'access arguments' => array('install plugins'),
+     'block callback' => 'system_admin_theme_settings',
++    'file' => 'plugin_manager.admin.inc',
+   );
+   $items['admin/plugin_manager/find'] = array(
+     'title' => 'Find',
+@@ -50,6 +54,7 @@ function plugin_manager_menu() {
+     'page arguments' => array('plugin_manager_find'),
+     'access arguments' => array('install plugins'),
+     'block callback' => 'system_admin_theme_settings',
++    'file' => 'plugin_manager.admin.inc',
+   );
+   $items['admin/plugin_manager/settings'] = array(
+     'title' => 'Settings',
+@@ -58,6 +63,7 @@ function plugin_manager_menu() {
+     'page arguments' => array('plugin_manager_settings_form'),
+     'access arguments' => array('plugin manager settings'),
+     'block callback' => 'system_admin_theme_settings',
++    'file' => 'plugin_manager.admin.inc',
+   );
+   $items['admin/plugin_manager/uninstall'] = array(
+     'title' => 'Uninstall',
+@@ -66,6 +72,7 @@ function plugin_manager_menu() {
+     'page arguments' => array('plugin_manager_uninstall_form'),
+     'access arguments' => array('uninstall plugins'),
+     'block callback' => 'system_admin_theme_settings',
++    'file' => 'plugin_manager.admin.inc',
+   );
+   $items['admin/plugin_manager/update'] = array(
+     'title' => 'Update',
+@@ -74,12 +81,14 @@ function plugin_manager_menu() {
+     'page arguments' => array('plugin_manager_update_form'),
+     'access arguments' => array('install modules'),
+     'block callback' => 'system_admin_theme_settings',
++    'file' => 'plugin_manager.admin.inc',
+   );
+   $items['admin/plugin_manager/manual'] = array(
+     'title' => 'Manual Install',
+     'page callback' => 'drupal_get_form',   
+     'page arguments' => array('plugin_manager_manual'),     
+-    'access arguments' => array('manual install plugins'),     
++    'access arguments' => array('manual install plugins'),
++    'file' => 'plugin_manager.admin.inc',     
+     'type' => MENU_CALLBACK,
+   );
+   $items['admin/plugin_manager/reload'] = array(
+@@ -96,6 +105,7 @@ function plugin_manager_menu() {
+     'page arguments' => array('plugin_manager_find'),
+     'weight' => 9,
+     'type' => MENU_LOCAL_TASK,
++    'file' => 'plugin_manager.admin.inc',
+   );
+   $items['admin/build/themes/install'] = array(
+     'title' => 'Install',
+@@ -104,6 +114,7 @@ function plugin_manager_menu() {
+     'page arguments' => array('plugin_manager_find'),
+     'weight' => 9,
+     'type' => MENU_LOCAL_TASK,
++    'file' => 'plugin_manager.admin.inc',
+   );
+   return $items;
+ }

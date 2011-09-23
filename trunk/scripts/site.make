@@ -1,0 +1,42 @@
+core = 7.x
+
+;projects[drupal][type] = core
+;projects[drupal][download][type] = cvs
+;projects[drupal][download][root] = :pserver:anonymous:anonymous@cvs.drupal.org:/cvs/drupal
+;projects[drupal][download][revision] = HEAD
+;projects[drupal][download][module] = drupal
+
+;projects[] = addthis
+;projects[] = admin_menu
+;projects[] = advanced_help
+projects[] = captcha
+;projects[] = contemplate
+;projects[] = devel
+;projects[] = email
+;projects[] = email_registration
+;projects[] = extlink
+;projects[] = flag
+projects[] = google_analytics
+;projects[] = htmlmail
+;projects[] = imageapi
+;projects[] = htmlmail
+;projects[] = imageapi
+;projects[] = jquery_ui
+;projects[] = jquery_update
+;projects[] = links
+;projects[] = logintoboggan
+;projects[] = path_auto
+projects[] = print
+;projects[] = quicktabs
+;projects[] = rules
+;projects[] = stringoverrides
+;projects[] = superfish
+;projects[] = textsize
+projects[] = token
+projects[] = views
+;projects[] = xmlsitemap
+
+;projects[tao][type] = theme
+;projects[tao][download][type] = git
+;projects[tao][download][url] = git://github.com/developmentseed/tao.git
+;projects[admin_menu][patch][] = "http://drupal.org/files/issues/admin_menu.long_.31.patch"

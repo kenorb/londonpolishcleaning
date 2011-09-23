@@ -1,0 +1,151 @@
+/* $Id$ */
+
+/**
+ * @file
+ * Styles for basic html elements.
+ * 
+ */
+
+body {
+  color: #3F3F3F;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  line-height: 135%;
+  margin: 0;
+} 
+
+/*
+ * Headings
+ */
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+h1 {
+  color: #313233;
+  font-size: 30px;
+  line-height: 50px;
+}
+h2 {
+  color: #5F9FAC;
+  font-size: 20px;
+  line-height: 20px;
+  margin: .5em 0;
+}
+h2 a {
+  color: #007C92;
+}
+h3, h4 {
+  color: #3F3F3F;
+  font-size: 15px;
+  line-height: 15px;
+}
+#page-title {
+  border-bottom: 1px dotted #666666;
+  margin-top: 0;
+}
+
+/*
+ * Links
+ */
+a {
+  color: #007C92;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+p a {
+  color: #CC3300;
+}
+
+/*
+ * Blockquote
+ */
+blockquote {
+  font-family: Georgia, Helvetica, arial, sans-serif;
+  font-style: italic;
+  margin-left: 150px;
+  margin-right: 0;
+}
+blockquote p {
+  margin: 25px 0;
+}
+
+/*
+ * Lists
+ */
+ul li {
+  list-style: square;
+}
+ul.vertical-tabs-list li {
+  list-style: none;
+}
+
+/*
+ * Image styles
+ */
+#content img,
+#sidebar-right .block img {
+  background-color: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  padding: 5px;
+}
+#content a.feed-icon img {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * Table styles
+ */
+table {
+  width: 100%;
+}
+table tr.odd {
+  background-color: #FFFFFF;
+  border: 0;
+}
+table tr.even {
+  background-color: #DCf8FF;
+  border: 0;
+}
+table th {
+  background-color: #84C9DD;
+  border: 0;
+  border-right: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 11px;
+  padding: 2px 5px 0 5px;
+  text-transform: uppercase;
+}
+table td {
+  border-right: 1px solid #FFFFFF;
+  font-size: 13px;
+  padding: 2px 5px 2px 5px;
+}
+
+/* Forms */
+.form-item label {
+  color: #333333;
+  font-size: 13px;
+}
+input.form-text {
+  font-family: Georgia,Helvetica,arial,sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  padding: 5px 10px;
+}
+#edit-actions {
+  padding-right: 20px;
+  text-align: right;
+}
+#content input.form-submit {
+  background-color: #A8C43E;
+  background-image: none;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 15px;
+  min-width: 130px;
+  padding: 5px 25px;
+  text-align: center;
+}

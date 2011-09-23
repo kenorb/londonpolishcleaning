@@ -1,0 +1,411 @@
+/* $Id$ */
+
+/**
+ * @file
+ * The majority of Drupal and style overrides unique to this theme.
+ *
+ */
+
+#page {
+  border: 1px solid #E5F4F6;
+  border-top: 0;
+}
+
+#header {
+  background: transparent url(../images/bg-header.png) top left no-repeat;
+}
+
+/* Site name and slogan */
+#name-and-slogan {
+  font-family: Helvetica, arial, sans-serif;
+}
+#site-name {
+  font-size: 29px;
+  line-height: 29px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#site-name a {
+  color: #000000;
+}
+#site-name a:hover {
+  text-decoration: none;
+}
+#site-slogan {
+  color: #999999;
+  text-transform: uppercase;
+}
+
+/* Search b3ox */
+#search-box {
+  clear: right;
+  float: right;
+}
+#search input {
+  font-family: Georgia, Helvetica, arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  padding: 5px 10px;
+}
+#search input.form-submit {
+  background: transparent url(../images/search.png) top left no-repeat;
+  border: 0;
+  height: 30px;
+  text-indent: -9999px;
+  width: 30px;
+}
+
+/* Navigation */
+#navigation #main-menu ul {
+  background-color: #7CC5D5;
+  height: 30px;
+}
+#navigation #main-menu ul li a {
+  border-right: 1px solid #FFF;
+  color: #000;
+  display: block;
+  float: left;
+  padding: 5px 0;
+  text-align: center;
+  width: 191px;
+}
+#navigation #main-menu ul li a:hover,
+#navigation #main-menu ul li.active-trail a {
+  background-color: #ABC5D5;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Breadcrumbs */
+#breadcrumb {
+  background-color: #eaf7fa;
+  min-height: 25px;
+  padding: 0 20px; 
+}
+#breadcrumb .breadcrumb {
+  color: #007C92;
+  font-family: Georgia, Helvetica, arial, sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  padding: 3px 0;
+}
+#breadcrumb .breadcrumb a{
+  color: #007C92;
+  padding: 0 5px;
+}
+
+/* Links */
+ul.links {
+  clear: both;
+}
+ul.links li.node_read_more a {
+  background-color: #B7E1EC;
+  color: #3F3F3F;
+  display: block;
+  float: right;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+/* Pager */
+ul.pager li {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 0.25em .5em;
+}
+ul.pager li.pager-previous a {
+  margin-right: 1.5em;
+}
+ul.pager li.pager-next a {
+  margin-left: 1.5em;
+}
+ul.pager li a {
+  color: #007C92;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Footer */
+#footer-wrapper {
+  border-bottom: 1px dotted #666666;
+  border-top: 1px dotted #666666;
+}
+#footer {
+  color: #333333;
+  font-family: Georgia, Helvetica, arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/*
+ * Drupal elements
+ */
+ 
+/* Blocks*/
+.block {
+  margin-bottom: 10px;
+}
+.block h2 {
+  font-weight: bold;
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 0;
+  padding: 0 10px;
+}
+.block .content {
+  padding: 10px;
+}
+body.front .view-frontpage .block .content {
+  height: 244px;
+}
+#sidebar-right .block,
+#content .block {
+  background-color: #EDF8FB;
+}
+#sidebar-right .block h2,
+#content .block h2 {
+  background: transparent url(../images/bg-block-title.png) top left no-repeat;
+  color: #000;
+}
+.block a {
+  color: #007C92;
+} 
+
+/* Messages */
+div.messages,
+div.help {
+  font-family: Georgia, Helvetica, arial, sans-serif;
+  font-style: italic;
+  margin: 10px 0;
+  padding: 15px 50px;
+}
+div.help {
+  padding-top: 0;
+}
+div.messages {
+  font-size: 20px;
+  line-height: 23px;
+}
+div.messages ul li {
+  margin: 5px 0;
+}
+div.help  {
+  background: #d5eaf1 url("../images/bg-help.png") 10px 10px no-repeat;
+  border: 1px solid #0090A9;
+  color: #0090A9;
+}
+div.status {
+  background: #eaf4dc url("../images/bg-status.png") 10px 10px no-repeat;
+  border: 1px solid #44A028;
+  color: #44A028;
+}
+div.warning {
+  background: url("../images/bg-warning.png") no-repeat scroll 10px 10px #FFFFDD;
+  border: 1px solid #B8860B;
+  color: #B8860B;
+}
+div.error {
+  background: #f9A7BC url("../images/bg-error.png") 10px 10px no-repeat;
+}
+div.error,
+.form-item input.error,
+.form-item textarea.error {
+  background-color: #f9A7BC;
+  border: 1px solid #990000;
+  color: #990000;
+}
+div.error ul li {
+  margin: 8px 0;
+}
+
+/* Tabs */
+.tabs ul.primary {
+  border-color: #CCCCCC;
+  height: 21px;
+}
+.tabs ul.primary a {
+  background-color: #EDF8FB;
+  color: #007C92;
+  padding: 5px 25px;
+}
+.tabs ul.primary a.active {
+  color: #333333;
+}
+.tabs ul.secondary {
+  border-bottom: 0;
+}
+.tabs ul.secondary a.active {
+  border-bottom: 0;
+}
+.tabs ul.secondary a:hover {
+  color: #3F3F3F;
+}
+ 
+ /*
+  * Log-in box styles
+  */
+#login-box {
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 10px 0;
+}
+#login-box a {
+  color: #3F3F3F;
+  padding: 0 5px;
+}
+#user-login-form .item-list li{
+  list-style: none;
+  margin: 0 20px 0 0;
+}
+
+/*
+ * Nodes
+ */
+.node {
+  margin-bottom: 10px;
+  padding: 10px 0 20px 0;
+}
+.node .meta {
+  font-size: 14px;
+}
+.node .meta .date,
+.node .meta .author,
+.node .meta .comment-count {
+  padding: 1px 10px;
+}
+.node .meta .submitted {
+  font-size: 11px;
+  padding-left: 0;
+}
+.node .meta .date,
+.node .meta .comment-count {
+  color: #007C92;
+  font-weight: bold;
+  padding-left: 0;
+  text-transform: uppercase;
+}  
+.node .meta .author {
+  font-family: Georgia, Helvetica, arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+.node .meta .comment-count {
+  background: transparent url(../images/quote.png) 10px 0 no-repeat;
+  padding-left: 30px;
+}
+.node .node-links {
+  float: right;
+}
+.node .links a {
+  color: #CC3300;
+  font-size: 12px;
+  font-weight: bold;
+}
+.node .terms {
+  background-color: #EAf4DC;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+}
+.node .terms .links a {
+  color: #2C3033;
+  font-family: Georgia, Helvetica, arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* 
+ * Comments 
+ */
+#comments .comment {
+  border-bottom: 1px dotted #666666;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+#comments .comment .picture {
+  float: left;
+  margin-right: 10px;
+}
+#comments .comment .author {
+  color: #2C3033;
+  font-family: Georgia, Helvetica, arial, sans-serif;
+  font-style: italic;
+  margin: 5px 0 10px 0;
+}
+#comments .comment .submitted {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 16px;
+  vertical-align: middle;
+}
+#comments .comment .submitted .date {
+  color: #007C92;
+  float: left;
+  font-size: 11px;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  top: -2px;
+}
+#comments .comment .submitted .pipe {
+  float: left;
+  margin: 0 10px;
+}
+#comments .comment ul.links {
+  clear: none;
+  float: left;
+  height: 19px;
+  position: relative;
+  top: -3px;
+}
+#comments .comment ul.links li.first {
+  padding-left: 0;
+}
+#comments .comment ul.links a {
+  color: #007C92;
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#comments .comment .content {
+  clear: left;
+  padding-top: 1px;
+}
+#comment-form .form-item label {
+  float: left;
+  margin-right: 10px;
+}
+#comment-form #edit-name-wrapper {
+  float: left;
+  margin-right: 50px;
+  width: 300px;
+}
+#comment-form #edit-mail-wrapper {
+  float: left;
+  width: 300px; 
+}
+#comment-form input.form-text {
+  width: 285px;
+}
+#comment-form #edit-comment-wrapper {
+  clear: left;
+}
+#comment-form .resizable-textarea {
+  clear: left;
+  width: 100%;
+}
+#comment-form textarea {
+  height: 100px;
+}
+#comment-form p,
+#comment-form ul.tips {
+  display: none;
+}
+#comment-form input.form-submit {
+  float: right;
+  margin-left: 10px;
+}
